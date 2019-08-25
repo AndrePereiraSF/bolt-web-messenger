@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bolt Messenger</title>
+    <link rel="icon" type="image/ico" href="assets/images/flash.png" />
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+
+<body>
+    <div class="nickname_container" id="nick">
+        <div>
+            <h1 id="title">Bolt Messenger</h1>
+        </div>
+        <div>
+            <span>Type your nickname:</span>
+            <form id="submit">
+                <input type="text" id="nickname" autocomplete="off">
+            </form>
+            <p id="warning"></p>
+        </div>
+    </div>
+    <div id="chat" hidden>
+
+        <div class="menu"=>
+            <div class="name" id="name">John Doe</div>
+            <div class="last" id="time">00:00h</div>
+        </div>
+
+        <ol class="chat">
+
+        </ol>
+
+        <input class="textarea" type="text" placeholder="Type here..." id="textarea" />
+    </div>
+    <script src="libs/jquery-3.4.1.min.js"></script>
+    <script src="node_modules/socket.io-client/dist/socket.io.js"></script>
+    <script src="assets/client.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+        integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+</body>
+
+</html>
